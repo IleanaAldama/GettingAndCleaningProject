@@ -21,6 +21,7 @@ mergedLabels <- activityNames[mergedLabels]
 mergedData["activity_labels"] <- mergedLabels
 mergedData["Subject"] <- mergedSubject
 write.table(mergedData, "./merged_dataset.txt", row.names = FALSE)
+tidy  <- aggregate(mergedData,by=list(mergedData$Subject,mergedData$activity_labels), FUN=mean)
 
 
 
