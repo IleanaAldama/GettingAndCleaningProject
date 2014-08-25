@@ -14,3 +14,13 @@ source('./run_analysis.R')
 
 list.file(".")
 
+The Resulting tidy DataSet is in the "tidy variable"
+
+You can see it with
+
+head(tidy)
+
+or
+
+tidy
+
